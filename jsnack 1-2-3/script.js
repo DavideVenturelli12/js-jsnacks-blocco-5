@@ -1,19 +1,10 @@
 //debug
 console.log('JS OK!');
 
-/* CONSEGNA:
+/**** JSNACK 1 ****
 
 - Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
-Calcola quanto pesano tutte le zucchine. [X]
-
-- Crea 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno 
-o più di 15cm. Infine stampa separatamente quanto pesano i due gruppi di zucchine. [X]
-
-- Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
-
-*/
-
-// **** JSNACK 1 ****
+Calcola quanto pesano tutte le zucchine. [X] */
 
 //creo un array con 10 oggetti (zucchine)
 
@@ -87,7 +78,10 @@ console.log(`il peso di tutte le zucchine è: ${sommaPeso(zucchine)} g, ovvero $
 
 
 
-// **** JSNACK 2 ****
+/**** JSNACK 2 ****
+
+- Crea 10 oggetti che rappresentano una zucchina.Dividi in due array separati le zucchine che misurano meno 
+o più di 15cm.Infine stampa separatamente quanto pesano i due gruppi di zucchine. [X] */
 
 //creo un array per le zucchine < 15cm
 const zucchineCorte = [];
@@ -113,4 +107,16 @@ console.log(`il peso delle zucchine corte è: ${sommaPeso(zucchineLunghe)} g, ov
 
 
 
-// **** JSNACK 3 ****
+/**** JSNACK 3 ****
+
+- Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC) */
+
+function stringaAlContrario(stringa) {
+    let nuovaStringa = '';
+    for (let i = stringa.length - 1; i >= 0; i--) {
+        nuovaStringa += stringa[i]
+    }
+    return nuovaStringa
+}
+
+console.log('zucchina al contrario è: ', stringaAlContrario('Zucchina'));

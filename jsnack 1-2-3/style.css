@@ -1,0 +1,14 @@
+/*generics*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./img/zucchina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*content*/
