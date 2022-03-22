@@ -2,14 +2,13 @@
 console.log('JS OK!');
 
 /* CONSEGNA:
-- Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
-Calcola quanto pesano tutte le zucchine.
 
 - Crea 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno 
 o più di 15cm. Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
-- Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
 */
+
+//creo un array con 10 oggetti (zucchine)
 
 const zucchine = [
     {
@@ -66,5 +65,18 @@ const zucchine = [
 
 console.table(zucchine);
 
+const zucchineCorte = [];
 
+const zucchineLunghe = [];
 
+for (let i = 0; i < zucchine.length; i++) {
+    if (zucchine[i].lunghezza <= 15) {
+        zucchineCorte.push(zucchine[i])
+    } else {
+        zucchineLunghe.push(zucchine[i])
+    }
+}
+
+console.table(zucchineCorte);
+
+console.table(zucchineLunghe);
